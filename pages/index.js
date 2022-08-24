@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Typewrite from '../components/Typewrite'
 export default function Home() {
   return (
     <div className="container">
@@ -7,11 +7,10 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h4 className="pre-title"> Howdy! The name's</h4>
+        <h1 className="title">Matthew Geyer</h1>
+        <Typewrite />
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
@@ -54,8 +53,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
