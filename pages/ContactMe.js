@@ -32,58 +32,26 @@ function ContactMe(props) {
 
   return (
     <div className="contact-wrapper">
-      <header className="res-header">
-        <div className="links">
-          <Link className="contact-link" to="/">
-            Home
-          </Link>
-          <Link className="resume" to="/resume">
-            Resume
-          </Link>
-
-          <a
-            className="github"
-            href="https://github.com/kennethachan"
-            target="_blank"
-          >
-            Github
-          </a>
-
-          <a
-            className="linkedin"
-            href="https://www.linkedin.com/in/kennethachan/"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </header>
+      <header className="res-header"></header>
       <div className="contact-heading">
-        <h3>Kenneth Chan</h3>
-        <h1 className="contact-title">Better Together</h1>
+        <h3>Matthew Geyer</h3>
+        <h1 className="contact-title">Let's Make Something!</h1>
       </div>
 
       <div className="contact-container">
         <div className="contact-notes">
-          <p>
-            {' '}
-            I enjoy working with dedicated creatives to help make the world a
-            more beautiful place.
-          </p>
-          <p>We can do so much together. Lets Talk!</p>
+          <p>I love working with creative, brilliant people</p>
+          <p>on projects of all sizes. Lets get in touch!</p>
 
           <li className="reach-methods">
-            Email me :
+            Email me at
             <a
               className="email-link"
-              href="mailto:kennethandrechan@gmail.com"
+              href="mailto:matt.a.geyer@gmail.com"
               target="_blank"
             >
-              kennethandrechan@gmail.com
+              : matt.a.geyer@gmail.com
             </a>
-          </li>
-          <li className="reach-methods">
-            If you want to hear my voice (914)-310-3522
           </li>
         </div>
 
@@ -156,7 +124,7 @@ function ContactMe(props) {
         }
 
         .contact-title {
-          font-size: 50px;
+          font-size: 40px;
           text-decoration: overline;
         }
 
@@ -170,6 +138,8 @@ function ContactMe(props) {
 
         .email-link {
           color: black;
+          text-decoration: none;
+          font-style: italic;
         }
 
         .contactForm {
