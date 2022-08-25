@@ -1,5 +1,18 @@
 import Head from 'next/head'
 import Typewrite from '../components/Typewrite'
+
+import AwesomeSlider from 'react-awesome-slider'
+import 'react-awesome-slider/dist/styles.css'
+import ContactMe from './ContactMe'
+
+const slider = (
+  <AwesomeSlider>
+    <div data-src="/path/to/image-0.png" />
+    <div data-src="/path/to/image-1.png" />
+    <div data-src="/path/to/image-2.jpg" />
+  </AwesomeSlider>
+)
+
 export default function Home() {
   return (
     <div className="container">
@@ -8,14 +21,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h4 className="pre-title"> Howdy! The name's</h4>
+        <h4 className="pre-title"> Howdy! I'm</h4>
         <h1 className="title">Matthew Geyer</h1>
         <Typewrite />
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
+        <div className="gif-container">
+          <img className="gif" src="/Coding-at-desk.gif" />
+        </div>
+        <ContactMe />
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
             <h3>Documentation &rarr;</h3>
@@ -62,11 +74,20 @@ export default function Home() {
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
+          background-color: #f6f3f9;
           flex-direction: column;
           justify-content: center;
           align-items: center;
         }
 
+        .gif {
+          max-width: 80%;
+        }
+        .gif-container {
+          display: flex;
+          justify-content: center;
+          margin-top: -15%;
+        }
         main {
           padding: 5rem 0;
           flex: 1;
@@ -161,8 +182,8 @@ export default function Home() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: #4974a5;
+          border-color: #4974a5;
         }
 
         .card h3 {
@@ -178,6 +199,10 @@ export default function Home() {
 
         .logo {
           height: 1em;
+        }
+
+        h1 {
+          margin: 0;
         }
 
         @media (max-width: 600px) {
