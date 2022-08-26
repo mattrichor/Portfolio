@@ -34,25 +34,27 @@ function ContactMe(props) {
     <div className="contact-wrapper">
       <header className="res-header"></header>
       <div className="contact-heading">
-        <h3>Matthew Geyer</h3>
+        <h3>
+          <a
+            className="email-link"
+            href="mailto:matt.a.geyer@gmail.com"
+            target="_blank"
+          >
+            matt.a.geyer@gmail.com
+          </a>
+        </h3>
         <h1 className="contact-title">Let's Make Something!</h1>
       </div>
 
       <div className="contact-container">
         <div className="contact-notes">
-          <p>I love working with creative, brilliant people</p>
-          <p>on projects of all sizes. Lets get in touch!</p>
+          <p>
+            I love nothing more than working with creative, brilliant people on
+            projects of all sizes.
+          </p>
+          <p className="get-in-touch"> Lets get in touch!</p>
 
-          <li className="reach-methods">
-            Email me at
-            <a
-              className="email-link"
-              href="mailto:matt.a.geyer@gmail.com"
-              target="_blank"
-            >
-              : matt.a.geyer@gmail.com
-            </a>
-          </li>
+          <li className="reach-methods"></li>
         </div>
 
         <div className="form-container">
@@ -104,7 +106,6 @@ function ContactMe(props) {
           margin-left: auto;
           margin-top: 150px;
         }
-
         .res-header {
           margin-bottom: 20px;
         }
@@ -139,7 +140,10 @@ function ContactMe(props) {
         .email-link {
           color: black;
           text-decoration: none;
-          font-style: italic;
+        }
+        .email-link:hover {
+          font-size: large;
+          color: #4974a5;
         }
 
         .contactForm {

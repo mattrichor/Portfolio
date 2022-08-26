@@ -4,14 +4,7 @@ import Typewrite from '../components/Typewrite'
 import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
 import ContactMe from './ContactMe'
-
-const slider = (
-  <AwesomeSlider>
-    <div data-src="/path/to/image-0.png" />
-    <div data-src="/path/to/image-1.png" />
-    <div data-src="/path/to/image-2.jpg" />
-  </AwesomeSlider>
-)
+import SideBar from '../components/SideBar'
 
 export default function Home() {
   return (
@@ -20,6 +13,9 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+        <SideBar />
+      </header>
       <main>
         <h4 className="pre-title"> Howdy! I'm</h4>
         <h1 className="title">Matthew Geyer</h1>
@@ -27,7 +23,13 @@ export default function Home() {
         <div className="gif-container">
           <img className="gif" src="/Coding-at-desk.gif" />
         </div>
+        <AwesomeSlider>
+          <div data-src="/path/to/image-0.png" />
+          <div data-src="/path/to/image-1.png" />
+          <div data-src="/path/to/image-2.jpg" />
+        </AwesomeSlider>
         <ContactMe />
+
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
             <h3>Documentation &rarr;</h3>
@@ -58,7 +60,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
       <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -68,7 +69,6 @@ export default function Home() {
           Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
-
       <style jsx>{`
         .container {
           min-height: 100vh;
@@ -212,7 +212,6 @@ export default function Home() {
           }
         }
       `}</style>
-
       <style jsx global>{`
         html,
         body {
