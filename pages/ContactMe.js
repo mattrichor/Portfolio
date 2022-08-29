@@ -110,13 +110,11 @@ function ContactMe(props) {
           margin-bottom: 20px;
         }
         .contact-notes {
-          margin-right: auto;
           margin-left: auto;
           text-align: center;
           width: 350px;
           border-radius: 25px;
           position: relative;
-          bottom: 10px;
         }
 
         .contact-heading {

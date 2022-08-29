@@ -30,7 +30,11 @@ const SideBar = () => {
         }
       >
         <div className="nav-upper">
-          <div className="nav-heading">
+          <div
+            className={
+              isExpanded ? 'nav-heading' : 'nav-heading-in nav-heading'
+            }
+          >
             {isExpanded && <div className="nav-brand"></div>}
             <button
               className={

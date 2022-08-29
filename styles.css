@@ -12,13 +12,13 @@
 }
 .header {
   align-self: start;
-  position: sticky;
+  position: fixed;
   height: 100%;
 }
 
 .side-nav-container {
   background-color: var(--gray);
-  width: 120px;
+  width: 200px;
   height: 100vh;
   position: relative;
   color: var(--light);
@@ -42,6 +42,10 @@
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   height: 75px;
+}
+
+.nav-heading-in {
+  grid-template-columns: 1fr;
 }
 
 .nav-brand {
@@ -91,7 +95,7 @@
 /* ///////////////////// */
 /* ///////////////////// */
 .hamburger-out {
-  margin-left: 24px;
+  margin: 0 auto;
 }
 .hamburger-out:hover span:nth-child(1) {
   width: 25px;
@@ -168,11 +172,6 @@
   background-color: var(--primary);
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .page {
   display: flex;
   justify-content: space-between;
@@ -185,4 +184,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+footer {
+  flex-direction: column;
 }
