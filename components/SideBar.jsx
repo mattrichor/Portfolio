@@ -1,43 +1,27 @@
 import React, { useState } from 'react'
 
-const SideNavBar = () => {
+const SideBar = () => {
   const [isExpanded, setExpendState] = useState(false)
   const menuItems = [
     {
-      text: 'Dashboard',
+      text: 'Home',
       icon: 'icons/grid.svg'
     },
     {
-      text: 'Admin Profile',
-      icon: 'icons/user.svg'
-    },
-    {
-      text: 'Messages',
-      icon: 'icons/message.svg'
-    },
-    {
-      text: 'Analytics',
-      icon: 'icons/pie-chart.svg'
-    },
-    {
-      text: 'File Manager',
+      text: 'Projects',
       icon: 'icons/folder.svg'
     },
     {
-      text: 'Orders',
+      text: 'Contact',
+      icon: 'icons/message.svg'
+    },
+    {
+      text: 'Resume',
       icon: 'icons/shopping-cart.svg'
-    },
-    {
-      text: 'Saved Items',
-      icon: 'icons/heart.svg'
-    },
-    {
-      text: 'Settings',
-      icon: 'icons/settings.svg'
     }
   ]
   return (
-    <div>
+    <div className="sidebar">
       <div
         className={
           isExpanded
@@ -47,12 +31,7 @@ const SideNavBar = () => {
       >
         <div className="nav-upper">
           <div className="nav-heading">
-            {isExpanded && (
-              <div className="nav-brand">
-                <img src="icons/Logo.svg" alt="" srcset="" />
-                <h2>Showkart</h2>
-              </div>
-            )}
+            {isExpanded && <div className="nav-brand"></div>}
             <button
               className={
                 isExpanded
@@ -81,28 +60,17 @@ const SideNavBar = () => {
         <div className="nav-footer">
           {isExpanded && (
             <div className="nav-details">
-              <img
-                className="nav-footer-avatar"
-                src="icons/admin-avatar.svg"
-                alt=""
-                srcset=""
-              />
               <div className="nav-footer-info">
-                <p className="nav-footer-user-name">M Showkat</p>
-                <p className="nav-footer-user-position">store admin</p>
+                <p className="nav-footer-user-name"></p>
+                <p className="nav-footer-user-position"></p>
               </div>
             </div>
           )}
-          <img
-            className="logout-icon"
-            src="icons/logout.svg"
-            alt=""
-            srcset=""
-          />
         </div>
       </div>
+      <style jsx>{``}</style>
     </div>
   )
 }
 
-export default SideNavBar
+export default SideBar
