@@ -19,13 +19,17 @@ export default function Home() {
             <SideBar />
           </header>
           <main className="content">
-            <div className="content"></div>
-            <h4 className="pre-title"> Howdy! I'm</h4>
-            <h1 className="title">Matthew Geyer</h1>
-            <Typewrite />
-            <div className="gif-container">
-              <img className="gif" src="/Coding-at-desk.gif" />
+            <div id="home">
+              <h4 className="pre-title"> Howdy! I'm</h4>
+              <h1 className="title">Matthew Geyer</h1>
+              <div className="typewriter">
+                <Typewrite />
+              </div>
+              <div className="gif-container">
+                <img className="gif" src="/Coding-at-desk.gif" />
+              </div>
             </div>
+
             <AwesomeSlider>
               <div data-src="/path/to/image-0.png" />
               <div data-src="/path/to/image-1.png" />
@@ -146,7 +150,9 @@ export default function Home() {
           }
 
           .title,
-          .description {
+          .description,
+          .pre-title,
+          .typewriter {
             text-align: center;
           }
 
