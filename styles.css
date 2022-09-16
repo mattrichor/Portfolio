@@ -130,7 +130,7 @@
 .menu-item:hover {
   background-color: var(--primary);
 }
-.menu-item img {
+.menu-item-icon {
   width: 30px;
   padding: 0 20px;
 }

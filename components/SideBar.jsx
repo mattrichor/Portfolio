@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
+import folder from '../public/icons/folder.svg'
 
 const SideBar = () => {
   const [isExpanded, setExpendState] = useState(false)
   const menuItems = [
     {
       text: 'Home',
-      icon: 'icons/grid.svg'
+      icon: 'public/icons/grid.svg'
     },
     {
       text: 'Projects',
-      icon: 'icons/folder.svg'
+      icon: folder
     },
     {
       text: 'Contact',
@@ -17,6 +18,10 @@ const SideBar = () => {
     },
     {
       text: 'Resume',
+      icon: 'icons/shopping-cart.svg'
+    },
+    {
+      text: 'About Me',
       icon: 'icons/shopping-cart.svg'
     }
   ]
