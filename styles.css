@@ -188,3 +188,48 @@ body {
 footer {
   flex-direction: column;
 }
+
+.tech {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+.tech-square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card-div {
+  background-color: #dcd0ea;
+  height: 100%;
+}
+.tech-icon {
+  max-width: 35px;
+}
+
+.project-card-title {
+  text-align: center;
+}
+
+.project-card-description {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.project-img {
+  max-width: 25vw;
+  margin: 5%;
+}
+.img-holder {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+.aws-sld__content {
+  align-items: flex-start;
+}

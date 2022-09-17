@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Typewrite from '../components/Typewrite'
 import Projects from '../components/Projects'
 import ProjectCard from '../components/ProjectCard'
-
 import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
 import ContactMe from './ContactMe'
@@ -34,12 +33,13 @@ export default function Home() {
             <div className="portfolio-title">Projects:</div>
             <AwesomeSlider>
               {Projects.map((project) => (
-                <div>
+                <div className="project-card-div" fillParent={true}>
                   <ProjectCard
                     key={project.index}
                     images={project.images}
                     title={project.title}
                     description={project.description}
+                    tech={project.tech}
                   />
                 </div>
               ))}
