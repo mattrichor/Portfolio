@@ -1,14 +1,19 @@
-// import withAutoplay from 'react-awesome-slider/dist/autoplay'
+// import { useNavigate } from 'react-router-dom'
 
-// const AutoplaySlider = withAutoplay(AwesomeSlider)
-
-const ProjectCard = ({ images, title, description, tech }) => {
+const ProjectCard = ({ images, title, description, tech, url }) => {
   return (
     <div>
       <h1 className="project-card-title">{title}</h1>
+      <a className="link" href={url.url}>
+        Deployed on
+        <span className="deploy-url"> {url.on}</span>
+        <img className="logo" src={url.icon}></img>
+      </a>
       <div className="img-holder">
         {images.map((image) => (
-          <img className="project-img" src={image}></img>
+          <a className="img-wrap" href={url.url}>
+            <img className="project-img" src={image}></img>
+          </a>
         ))}
       </div>
 
@@ -18,7 +23,7 @@ const ProjectCard = ({ images, title, description, tech }) => {
         {tech.map((obj) => (
           <div className="tech-square">
             <img src={obj.icon} className="tech-icon" alt={obj.name}></img>
-            {/* <div className="tech-name">{obj.name}</div> */}
+            <p class="img-description">{obj.name}</p>
           </div>
         ))}
       </div>

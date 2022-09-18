@@ -6,13 +6,14 @@ import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
 import ContactMe from './ContactMe'
 import SideBar from '../components/SideBar'
+import AboutMe from '../components/AboutMe'
 
 export default function Home() {
   return (
     <div className="container">
       <div>
         <Head>
-          <title>Matthew Geyer Software Developer Portfolio</title>
+          <title>M Geyer Software Dev</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="page">
@@ -20,7 +21,7 @@ export default function Home() {
             <SideBar />
           </header>
           <main className="content">
-            <div id="home">
+            <a id="home">
               <h4 className="pre-title"> Howdy! I'm</h4>
               <h1 className="title">Matthew Geyer</h1>
               <div className="typewriter">
@@ -29,8 +30,10 @@ export default function Home() {
               <div className="gif-container">
                 <img className="gif" src="/Coding-at-desk.gif" />
               </div>
-            </div>
-            <div className="portfolio-title">Projects:</div>
+            </a>
+            <a id="projects">
+              <div className="portfolio-title">Projects:</div>
+            </a>
             <AwesomeSlider>
               {Projects.map((project) => (
                 <div className="project-card-div" fillParent={true}>
@@ -40,11 +43,19 @@ export default function Home() {
                     title={project.title}
                     description={project.description}
                     tech={project.tech}
+                    url={project.url}
                   />
                 </div>
               ))}
             </AwesomeSlider>
-            <ContactMe />
+
+            <a id="contact">
+              <ContactMe />
+            </a>
+            <a id="about">
+              <AboutMe />
+            </a>
+            <a id="resume"></a>
           </main>
         </div>
 

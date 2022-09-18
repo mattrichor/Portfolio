@@ -6,23 +6,28 @@ const SideBar = () => {
   const menuItems = [
     {
       text: 'Home',
-      icon: 'public/icons/grid.svg'
+      icon: '/icons/iconHome2.png',
+      url: '#home'
     },
     {
       text: 'Projects',
-      icon: folder
+      icon: '/icons/iconFolder.png',
+      url: '#projects'
     },
     {
       text: 'Contact',
-      icon: 'icons/message.svg'
+      icon: '/icons/iconEmail3.ico',
+      url: '#contact'
     },
     {
       text: 'Resume',
-      icon: 'icons/shopping-cart.svg'
+      icon: '/icons/iconResume.ico',
+      url: '#resume'
     },
     {
       text: 'About Me',
-      icon: 'icons/shopping-cart.svg'
+      icon: 'icons/iconInfo.ico',
+      url: '#about'
     }
   ]
   return (
@@ -55,13 +60,16 @@ const SideBar = () => {
             </button>
           </div>
           <div className="nav-menu">
-            {menuItems.map(({ text, icon }) => (
+            {menuItems.map((item) => (
               <a
                 className={isExpanded ? 'menu-item' : 'menu-item menu-item-NX'}
-                href="#"
+                href={item.url}
               >
-                <img className="menu-item-icon" src={icon} alt="" srcset="" />
-                {isExpanded && <p>{text}</p>}
+                {isExpanded ? (
+                  <p className="menu-item-text">{item.text}</p>
+                ) : (
+                  <img className="menu-item-icon" src={item.icon} />
+                )}
               </a>
             ))}
           </div>
