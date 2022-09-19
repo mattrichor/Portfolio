@@ -7,9 +7,9 @@ const Projects = [
     title: 'Strava Segmnt Slayr',
     description: `A tool to search, sort, and see how you'd compete on Strava segments. Utilizing Strava's API, chart.js, & an accurate engineering model, users can create a power zone graph and estimate the watts required to smash segments on the bike!`,
     url: {
-      url: 'rainy-actor.surge.sh',
-      on: ' Surge',
-      icon: '/icons/surge-logo.png'
+      url: 'https://segmnt-slayr.netlify.app/',
+      on: ' Netlify',
+      icon: '/icons/iconNetlify.webp'
     },
     images: ['/projectImages/SSS-1.webp'],
     index: 1,
