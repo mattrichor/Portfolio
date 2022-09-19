@@ -4,11 +4,16 @@ const ProjectCard = ({ images, title, description, tech, url }) => {
   return (
     <div>
       <h1 className="project-card-title">{title}</h1>
-      <a className="link" href={url.url}>
-        Deployed on
-        <span className="deploy-url"> {url.on}</span>
-        <img className="logo" src={url.icon}></img>
-      </a>
+      {url.url !== '' ? (
+        <a className="link" href={url.url}>
+          Deployed on
+          <span className="deploy-url"> {url.on}</span>
+          <img className="logo" src={url.icon}></img>
+        </a>
+      ) : (
+        <div></div>
+      )}
+
       <div className="img-holder">
         {images.map((image) => (
           <a className="img-wrap" href={url.url}>
