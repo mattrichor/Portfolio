@@ -7,6 +7,8 @@ import 'react-awesome-slider/dist/styles.css'
 import ContactMe from './ContactMe'
 import SideBar from '../components/SideBar'
 import AboutMe from '../components/AboutMe'
+import Resume from '../components/Resume'
+import Skills from '../components/Skills'
 
 export default function Home() {
   return (
@@ -32,7 +34,7 @@ export default function Home() {
               </div>
             </a>
             <a id="projects">
-              <div className="portfolio-title">Projects:</div>
+              <h3 className="portfolio-title">Projects:</h3>
             </a>
             <AwesomeSlider>
               {Projects.map((project) => (
@@ -48,25 +50,33 @@ export default function Home() {
                 </div>
               ))}
             </AwesomeSlider>
+            <a id="about">
+              <AboutMe />
+            </a>
+            <a id="resume">
+              <Resume className="resume-section" />
+            </a>
 
             <a id="contact">
               <ContactMe />
             </a>
-            <a id="about">
-              <AboutMe />
-            </a>
-            <a id="resume"></a>
+            <div className="skills-wrap">
+              <Skills />
+            </div>
           </main>
         </div>
 
         <footer>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
-          </a>
+          <div className="foot-logo">
+            {' '}
+            <a href="https://github.com/mattrichor">
+              <img src="/icons/skills/linkedin.png"></img>
+            </a>
+            <a href="https://www.linkedin.com/in/matthew-geyer/">
+              <img src="/icons/skills/github.png"></img>
+            </a>
+          </div>
+          Portfolio by Matthew Geyer 💙<br></br>Powered By Next.js
         </footer>
         <style jsx>{`
           .container {

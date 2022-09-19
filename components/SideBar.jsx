@@ -15,9 +15,9 @@ const SideBar = () => {
       url: '#projects'
     },
     {
-      text: 'Contact',
-      icon: '/icons/iconEmail3.ico',
-      url: '#contact'
+      text: 'About Me',
+      icon: 'icons/iconInfo.ico',
+      url: '#about'
     },
     {
       text: 'Resume',
@@ -25,9 +25,9 @@ const SideBar = () => {
       url: '#resume'
     },
     {
-      text: 'About Me',
-      icon: 'icons/iconInfo.ico',
-      url: '#about'
+      text: 'Contact',
+      icon: '/icons/iconEmail3.ico',
+      url: '#contact'
     }
   ]
   return (
