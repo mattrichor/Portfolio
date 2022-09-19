@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import folder from '../public/icons/folder.svg'
 
 const SideBar = () => {
   const [isExpanded, setExpendState] = useState(false)
