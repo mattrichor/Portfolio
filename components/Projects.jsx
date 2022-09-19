@@ -24,7 +24,11 @@ const Projects = [
     title: 'The Living Room',
     description: `A simple social media concept for families to share what's most important to them: pictures, recipes, memories, & plans. Members can also view their lineage in a family tree, and add memories about other family members that will be listed inside their individual member pages `,
     url: '',
-    images: [],
+    images: [
+      '/projectImages/LR-1.webp',
+      '/projectImages/LR-2.webp',
+      '/projectImages/LR-3.webp'
+    ],
     index: 2,
     tech: [
       { name: 'React.js', icon: '/icons/iconreact.png' },
@@ -36,7 +40,11 @@ const Projects = [
     title: `Coach's Corner`,
     description:
       'A gamified approach to coaching athletes. Allows coaches to see player skills, update them, and store them. Players can be given assignments and exercise drills by the coach, ranking up their skills through assignment completion, and allowing the coach to track their progress!',
-    url: '',
+    url: {
+      url: 'https://coachs-corner.herokuapp.com/',
+      on: ' Heroku',
+      icon: '/icons/iconHeroku.png'
+    },
     images: [
       '/projectImages/CC-2.webp',
       '/projectImages/CC-1.webp',
