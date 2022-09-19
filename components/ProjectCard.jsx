@@ -4,7 +4,7 @@ const ProjectCard = ({ images, title, description, tech, url }) => {
   return (
     <div>
       <h1 className="project-card-title">{title}</h1>
-      {url.url !== '' ? (
+      {url !== '' ? (
         <a className="link" href={url.url}>
           Deployed on
           <span className="deploy-url"> {url.on}</span>
