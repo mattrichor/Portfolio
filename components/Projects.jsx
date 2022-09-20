@@ -23,7 +23,11 @@ const Projects = [
   {
     title: 'The Living Room',
     description: `A simple social media concept for families to share what's most important to them: pictures, recipes, memories, & plans. Members can also view their lineage in a family tree, and add memories about other family members that will be listed inside their individual member pages `,
-    url: '',
+    url: {
+      url: 'https://the-living-room.herokuapp.com/',
+      on: ' Heroku',
+      icon: '/icons/iconHeroku.webp'
+    },
     images: [
       '/projectImages/LR-1.webp',
       '/projectImages/LR-2.webp',
