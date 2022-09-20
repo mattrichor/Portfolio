@@ -47,7 +47,7 @@ const Projects = [
     url: {
       url: 'https://coachs-corner.herokuapp.com/',
       on: ' Heroku',
-      icon: '/icons/iconHeroku.png'
+      icon: '/icons/iconHeroku.webp'
     },
     images: [
       '/projectImages/CC-2.webp',
