@@ -58,6 +58,22 @@ export default function Home() {
                 </div>
               ))}
             </AwesomeSlider>
+
+            {/* <div id="mobile-proj">
+              {Projects.map((project) => (
+                <div className="project-card-mobile" fillParent={true}>
+                  <ProjectCard
+                    key={project.index}
+                    images={project.images}
+                    title={project.title}
+                    description={project.description}
+                    tech={project.tech}
+                    url={project.url}
+                  />
+                </div>
+              ))}
+            </div> */}
+
             <a id="about">
               <AboutMe />
             </a>

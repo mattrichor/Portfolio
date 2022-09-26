@@ -539,7 +539,6 @@ br {
 
   .submit {
     position: relative;
-    left: 127px;
   }
 }
 
@@ -651,6 +650,14 @@ footer img:hover {
   margin-top: -15%;
 }
 
+#mobile-proj {
+  display: none;
+}
+
+.thanks {
+  margin-bottom: 1.5%;
+}
+
 @media only screen and (max-width: 414px) {
   .project-card-title {
     border: none;
@@ -722,5 +729,52 @@ footer img:hover {
   }
 
   .pre-title {
+  }
+
+  .gif {
+    max-width: 100%;
+  }
+  .project-card-div {
+    height: 100%;
+  }
+
+  #mobile-proj {
+    display: block;
+  }
+
+  .about-paragraph {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  .blurb {
+    display: none;
+  }
+  .me {
+    max-width: 40vw;
+    border-radius: 30%;
+    margin-bottom: 2%;
+  }
+  .thanks {
+    text-align: center;
+  }
+
+  .contact-notes {
+    display: none;
+  }
+
+  .contactForm {
+    margin-left: 10%;
+  }
+  .tab-child {
+    font-size: 12px;
+  }
+
+  .tab-header li {
+    margin-bottom: 0;
+    line-height: 18px;
+  }
+
+  .project-img {
+    max-width: 35vw;
   }
 }
