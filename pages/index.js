@@ -19,10 +19,18 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="page">
-          <header className="header">
+          <header className="header-desk">
             <SideBar />
           </header>
           <main className="content">
+            <div className="top-logo">
+              <a href="https://github.com/mattrichor">
+                <img src="/icons/skills/github.png"></img>
+              </a>
+              <a href="https://www.linkedin.com/in/matthew-geyer/">
+                <img src="/icons/skills/linkedin.png"></img>
+              </a>
+            </div>
             <a id="home">
               <h4 className="pre-title"> Howdy! I'm</h4>
               <h1 className="title">Matthew Geyer</h1>
@@ -68,12 +76,11 @@ export default function Home() {
 
         <footer>
           <div className="foot-logo">
-            {' '}
             <a href="https://github.com/mattrichor">
-              <img src="/icons/skills/linkedin.png"></img>
+              <img src="/icons/skills/github.png"></img>
             </a>
             <a href="https://www.linkedin.com/in/matthew-geyer/">
-              <img src="/icons/skills/github.png"></img>
+              <img src="/icons/skills/linkedin.png"></img>
             </a>
           </div>
           Portfolio by Matthew Geyer 💙<br></br>Powered By Next.js
@@ -88,14 +95,6 @@ export default function Home() {
             justify-content: space-between;
           }
 
-          .gif {
-            max-width: 80%;
-          }
-          .gif-container {
-            display: flex;
-            justify-content: center;
-            margin-top: -15%;
-          }
           main {
             padding: 5rem 0;
             flex: 1;

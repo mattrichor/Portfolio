@@ -26,7 +26,7 @@ const Projects = [
     url: {
       url: 'https://the-living-room.herokuapp.com/',
       on: ' Heroku',
-      icon: '/icons/iconHeroku.webp'
+      icon: '/icons/iconHeroku.png'
     },
     images: [
       '/projectImages/LR-1.webp',
@@ -47,7 +47,7 @@ const Projects = [
     url: {
       url: 'https://coachs-corner.herokuapp.com/',
       on: ' Heroku',
-      icon: '/icons/iconHeroku.webp'
+      icon: '/icons/iconHeroku.png'
     },
     images: [
       '/projectImages/CC-2.webp',
