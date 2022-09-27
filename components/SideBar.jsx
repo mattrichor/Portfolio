@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 const SideBar = () => {
   const [isExpanded, setExpendState] = useState(false)
@@ -6,27 +7,27 @@ const SideBar = () => {
     {
       text: 'Home',
       icon: '/icons/iconHome2.png',
-      url: '#home'
+      url: 'home'
     },
     {
       text: 'Projects',
       icon: '/icons/iconFolder.png',
-      url: '#projects'
+      url: 'projects'
     },
     {
       text: 'About Me',
       icon: 'icons/iconInfo.ico',
-      url: '#about'
+      url: 'about'
     },
     {
       text: 'Resume',
       icon: '/icons/iconResume.ico',
-      url: '#resume'
+      url: 'resume'
     },
     {
       text: 'Contact',
       icon: '/icons/iconEmail3.ico',
-      url: '#contact'
+      url: 'contact'
     }
   ]
   return (
@@ -60,16 +61,19 @@ const SideBar = () => {
           </div>
           <div className="nav-menu">
             {menuItems.map((item) => (
-              <a
+              <Link
                 className={isExpanded ? 'menu-item' : 'menu-item menu-item-NX'}
-                href={item.url}
+                activeClass="active"
+                to={item.url}
+                smooth={true}
+                duration={500}
               >
                 {isExpanded ? (
                   <p className="menu-item-text">{item.text}</p>
                 ) : (
                   <img className="menu-item-icon" src={item.icon} />
                 )}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

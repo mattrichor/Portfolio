@@ -3,6 +3,7 @@ import Typewrite from '../components/Typewrite'
 import Projects from '../components/Projects'
 import ProjectCard from '../components/ProjectCard'
 import AwesomeSlider from 'react-awesome-slider'
+
 import 'react-awesome-slider/dist/styles.css'
 import ContactMe from './ContactMe'
 import SideBar from '../components/SideBar'
@@ -31,7 +32,7 @@ export default function Home() {
                 <img src="/icons/skills/linkedin.png"></img>
               </a>
             </div>
-            <a id="home">
+            <section id="home">
               <h4 className="pre-title"> Howdy! I'm</h4>
               <h1 className="title">Matthew Geyer</h1>
               <div className="typewriter">
@@ -40,10 +41,10 @@ export default function Home() {
               <div className="gif-container">
                 <img className="gif" src="/Coding-at-desk.gif" />
               </div>
-            </a>
-            <a id="projects">
-              <h3 className="portfolio-title">Projects:</h3>
-            </a>
+            </section>
+            <section id="projects">
+              <h2 className="portfolio-title">Projects:</h2>
+            </section>
             <AwesomeSlider>
               {Projects.map((project) => (
                 <div className="project-card-div" fillParent={true}>
@@ -58,35 +59,19 @@ export default function Home() {
                 </div>
               ))}
             </AwesomeSlider>
-
-            {/* <div id="mobile-proj">
-              {Projects.map((project) => (
-                <div className="project-card-mobile" fillParent={true}>
-                  <ProjectCard
-                    key={project.index}
-                    images={project.images}
-                    title={project.title}
-                    description={project.description}
-                    tech={project.tech}
-                    url={project.url}
-                  />
-                </div>
-              ))}
-            </div> */}
-
-            <a id="about">
-              <AboutMe />
-            </a>
-            <a id="resume">
-              <Resume className="resume-section" />
-            </a>
-
-            <a id="contact">
-              <ContactMe />
-            </a>
             <div className="skills-wrap">
               <Skills />
             </div>
+            <section id="about">
+              <AboutMe />
+            </section>
+            <section id="resume">
+              <Resume className="resume-section" />
+            </section>
+
+            <section id="contact">
+              <ContactMe />
+            </section>
           </main>
         </div>
 

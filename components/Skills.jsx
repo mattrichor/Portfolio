@@ -4,6 +4,7 @@ import TabPane from './TabPane'
 const Skills = () => {
   return (
     <div className="skills-container">
+      <h2 className="title">Skills:</h2>
       <Tabs>
         <TabPane name="Programming Languages" key="1">
           <img

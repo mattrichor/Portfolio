@@ -618,6 +618,7 @@ tabs {
 .skills-wrap {
   border-top: #455a64 1px solid;
   /* width: 100%; */
+  margin-top: 10%;
   margin-bottom: -5%;
 }
 
