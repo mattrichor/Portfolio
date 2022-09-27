@@ -150,6 +150,7 @@
 
 .menu-item:hover {
   transform: scale(1.08);
+  cursor: pointer;
 }
 .nav-footer {
   width: 100%;
