@@ -9,7 +9,8 @@ const Projects = [
     url: {
       url: 'https://segmnt-slayr.netlify.app/',
       on: ' Netlify',
-      icon: '/icons/iconNetlify.webp'
+      icon: '/icons/iconNetlify.webp',
+      github: 'https://github.com/mattrichor/Strava_Segmnt_Slayr'
     },
     images: ['/projectImages/SSS-1.webp'],
     index: 1,
@@ -26,7 +27,8 @@ const Projects = [
     url: {
       url: 'https://the-living-room.herokuapp.com/',
       on: ' Heroku',
-      icon: '/icons/iconHeroku.png'
+      icon: '/icons/iconHeroku.png',
+      github: 'https://github.com/mattrichor/The-Living-Room'
     },
     images: [
       '/projectImages/LR-1.webp',
@@ -43,11 +45,12 @@ const Projects = [
   {
     title: `Coach's Corner`,
     description:
-      'A gamified approach to coaching athletes. Allows coaches to see player skills, update them, and store them. Players can be given assignments and exercise drills by the coach, ranking up their skills through assignment completion, and allowing the coach to track their progress!',
+      'A gamified approach to coaching athletes. Allows coaches to see player skills, update them, and store them. Players can be given assignments and exercise drills by the coach, ranking up their skills through assignment completion, and allowing the coach to track their progress! This was a group project that saw me handling the backend and higher-order React functionality.',
     url: {
       url: 'https://coachs-corner.herokuapp.com/',
       on: ' Heroku',
-      icon: '/icons/iconHeroku.png'
+      icon: '/icons/iconHeroku.png',
+      github: 'https://github.com/mattrichor/Coachs_Corner_Client'
     },
     images: [
       '/projectImages/CC-2.webp',
@@ -68,7 +71,8 @@ const Projects = [
     url: {
       url: 'https://wabi-sketch-client.herokuapp.com/',
       on: ' Heroku',
-      icon: '/icons/iconHeroku.png'
+      icon: '/icons/iconHeroku.png',
+      github: 'https://github.com/mattrichor/Wabi-Sketch-client'
     },
     images: [
       '/projectImages/wabi-sketch-2.webp',

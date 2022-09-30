@@ -250,19 +250,34 @@ footer {
   font-size: 5vw;
   border-bottom: #061b28 solid 1pt;
   padding-bottom: 2%;
+  margin-top: 1.5%;
 }
 
 .link {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0;
+
   text-decoration: none;
   color: var(--dark);
   margin-top: -6%;
   padding-bottom: 4%;
 }
 .link:hover {
+  transform: scale(1.04);
+  color: var(--primary);
+}
+.git-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0%;
+  margin-bottom: -2%;
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 500;
+}
+.git-link:hover {
   transform: scale(1.04);
   color: var(--primary);
 }

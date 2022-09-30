@@ -22,7 +22,12 @@ const ProjectCard = ({ images, title, description, tech, url }) => {
         ))}
       </div>
 
-      <div className="project-card-description">{description}</div>
+      <div className="project-card-description">
+        {description}
+        <a className="git-link" href={url.github}>
+          Source Code
+        </a>
+      </div>
 
       <div className="tech">
         {tech.map((obj) => (
