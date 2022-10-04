@@ -13,6 +13,10 @@
   /* font-family: 'Merriweather', serif; */
 }
 
+main {
+  background-image: linear-gradient(var(--light) 70%, white);
+}
+
 .sideBar {
   align-self: start;
   height: 100%;
@@ -574,6 +578,7 @@ br {
 
 .container {
   height: 50px;
+  background-color: var(--light);
 }
 
 tabs {
@@ -676,6 +681,10 @@ footer img:hover {
 }
 
 @media only screen and (max-width: 414px) {
+  .aws-sld,
+  .aws-sld__container {
+    display: none;
+  }
   .project-card-title {
     border: none;
   }
