@@ -4,6 +4,29 @@
 
 const Projects = [
   {
+    title: 'Wabi-Sketch',
+    description: `Built around the Japanese aesthetic 'Wabi-sabi' (侘寂) & its acceptance and appreciation of transience and imperfection, Wabi-Sketch aims to be a place where users may experience the simple joy of sketching, without any other goal in mind. You can share sketches with friends, build on sketches sent to you, & participate in a daily prompt with a limited, ai-chosen color palette and realtime chat functionality.`,
+    url: {
+      url: 'https://wabi-sketch-client.herokuapp.com/',
+      on: ' Heroku',
+      icon: '/icons/iconHeroku.png',
+      github: 'https://github.com/mattrichor/Wabi-Sketch-client'
+    },
+    images: [
+      '/projectImages/wabi-sketch-2.webp',
+      '/projectImages/wabi-sketch-5.webp',
+      '/projectImages/wabi-sketch-6.webp'
+    ],
+    index: 1,
+    tech: [
+      { name: 'React.js', icon: '/icons/iconreact.png' },
+      { name: 'PostgreSQL', icon: 'icons/iconPostGresql.png' },
+      { name: 'Node.js', icon: 'icons/iconnode.png' },
+      { name: 'JWT', icon: 'icons/iconJWT.png' },
+      { name: 'Socket.io', icon: 'icons/iconSocketIO.png' }
+    ]
+  },
+  {
     title: 'Strava Segmnt Slayr',
     description: `A tool to search, sort, and see how you'd compete on Strava segments. Utilizing Strava's API, chart.js, & an accurate engineering model, users can create a power zone graph and estimate the watts required to smash segments on the bike!`,
     url: {
@@ -13,7 +36,7 @@ const Projects = [
       github: 'https://github.com/mattrichor/Strava_Segmnt_Slayr'
     },
     images: ['/projectImages/SSS-1.webp'],
-    index: 1,
+    index: 2,
     tech: [
       { name: 'JavaScript', icon: '/icons/iconJavaScript.png' },
       { name: 'HTML5', icon: '/icons/iconHTMl.png' },
@@ -35,7 +58,7 @@ const Projects = [
       '/projectImages/LR-2.webp',
       '/projectImages/LR-3.webp'
     ],
-    index: 2,
+    index: 3,
     tech: [
       { name: 'React.js', icon: '/icons/iconreact.png' },
       { name: 'MongoDB', icon: '/icons/iconMongo.png' },
@@ -57,35 +80,12 @@ const Projects = [
       '/projectImages/CC-1.webp',
       '/projectImages/CC-3.webp'
     ],
-    index: 3,
-    tech: [
-      { name: 'React.js', icon: '/icons/iconreact.png' },
-      { name: 'PostgreSQL', icon: 'icons/iconPostGresql.png' },
-      { name: 'Node.js', icon: 'icons/iconnode.png' },
-      { name: 'JWT', icon: 'icons/iconJWT.png' }
-    ]
-  },
-  {
-    title: 'Wabi-Sketch',
-    description: `Built around the Japanese aesthetic 'Wabi-sabi' (侘寂) & its acceptance and appreciation of transience and imperfection, Wabi-Sketch aims to be a place where users may experience the simple joy of sketching, without any other goal in mind. You can share sketches with friends, build on sketches sent to you, & participate in a daily prompt with a limited, ai-chosen color palette and realtime chat functionality.`,
-    url: {
-      url: 'https://wabi-sketch-client.herokuapp.com/',
-      on: ' Heroku',
-      icon: '/icons/iconHeroku.png',
-      github: 'https://github.com/mattrichor/Wabi-Sketch-client'
-    },
-    images: [
-      '/projectImages/wabi-sketch-2.webp',
-      '/projectImages/wabi-sketch-5.webp',
-      '/projectImages/wabi-sketch-6.webp'
-    ],
     index: 4,
     tech: [
       { name: 'React.js', icon: '/icons/iconreact.png' },
       { name: 'PostgreSQL', icon: 'icons/iconPostGresql.png' },
       { name: 'Node.js', icon: 'icons/iconnode.png' },
-      { name: 'JWT', icon: 'icons/iconJWT.png' },
-      { name: 'Socket.io', icon: 'icons/iconSocketIO.png' }
+      { name: 'JWT', icon: 'icons/iconJWT.png' }
     ]
   }
 ]
