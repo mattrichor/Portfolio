@@ -4,6 +4,28 @@
 
 const Projects = [
   {
+    title: 'Levi-Tailored',
+    description: `Built for the Levi's Denim De-coded hackathon in October 2022 (and winning third place in the contest), our development team was tasked with envisioning and seamlessly implementing Tailored's garment scan technology into the Levi's online shop. Utilizing AI scanning and a recommendation engine that takes into account every aspect of clothing fit for an accurate online shopping experience.`,
+    url: {
+      url: 'https://tailored-levi.herokuapp.com/',
+      on: ' Heroku',
+      icon: '/icons/iconHeroku.png',
+      github: 'https://github.com/otter23/tailored-levi'
+    },
+    images: [
+      '/projectImages/levi-tailored2.webp',
+      '/projectImages/levi-tailored1.webp',
+      '/projectImages/levi-tailored3.webp'
+    ],
+    index: 1,
+    tech: [
+      { name: 'React.js', icon: '/icons/iconreact.png' },
+      { name: 'PostgreSQL', icon: 'icons/iconPostGresql.png' },
+      { name: 'Node.js', icon: 'icons/iconnode.png' },
+      { name: 'Python', icon: 'icons/skills/python.png' }
+    ]
+  },
+  {
     title: 'Wabi-Sketch',
     description: `Built around the Japanese aesthetic 'Wabi-sabi' (侘寂) & its acceptance and appreciation of transience and imperfection, Wabi-Sketch aims to be a place where users may experience the simple joy of sketching, without any other goal in mind. You can share sketches with friends, build on sketches sent to you, & participate in a daily prompt with a limited, ai-chosen color palette and realtime chat functionality.`,
     url: {
